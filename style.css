@@ -1,0 +1,27 @@
+html {
+    overflow:  hidden;
+
+
+
+}
+
+
+body {
+    margin: 0%;
+    height: 100vh;
+   
+    
+}
+
+#foto {
+    height: 100vh;        
+}
+
+.body-contane {
+   
+}
+
+#grid {
+    display: grid;
+    
+}
