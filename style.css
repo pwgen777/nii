@@ -14,5 +14,17 @@ body {
           
 }
 
+.container {
+    /* position: absolute; */
+}
+
+.grid {
+    height: 100vh;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+} 
+
 
 
