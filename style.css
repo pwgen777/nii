@@ -1,6 +1,7 @@
 html {
     overflow:  hidden;
-    width: 3px;
+    
+    
 }
 
 
@@ -10,11 +11,10 @@ body {
 }
 
 #foto {
-    height: 100vh;        
+    height: 100vh;
+    position: absolute;
+          
 }
 
 
-#grid {
-    display: grid;
-    
-}
+
