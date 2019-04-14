@@ -3,7 +3,6 @@
 function replaceVerticalScrollByHorizontal(event) {
     	if (event.deltaY != 0) {
         window.scroll(window.scrollX + event.deltaY * 1, window.scrollY);
-      	event.preventDefault();
         }
       return;
 }
@@ -12,7 +11,7 @@ function replaceVerticalScrollByHorizontal(event) {
 
 
 var width , height;
-var getSize = document.getElementById('foto');
+var getSize = document.getElementById('photo');
 getSize.onload = function() {
     width = this.offsetWidth;
     height = this.offsetHeight; 
@@ -25,9 +24,11 @@ getSize.onload = function() {
 }
 
 
-document.getElementById('foto').ondragstart = function() { return false; };
+document.getElementById('photo').ondragstart = function() { return false; };
 var x , y;
 document.onmousemove = mousemove;
+
+
 document.onmousedown = function(e) {
 
   e = e || window.event;
