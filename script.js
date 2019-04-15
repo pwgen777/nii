@@ -57,12 +57,12 @@ function mousemove(e) {
 for (var i = 1; i < 22; i++) {
  var newDiv = document.createElement('div');
     newDiv.id=('div'+i);
+    newDiv.className=("gridCell");
     gridEx.appendChild(newDiv);
 };
 
 for (var i = 1; i < 22; i++) {
   var txt = document.getElementById('div'+i);
-  // txt.style.textAlign = center;
   txt.innerText = ('Персональный id = '+i);
  
  };
