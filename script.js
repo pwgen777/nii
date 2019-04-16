@@ -1,4 +1,6 @@
 'use strict'
+
+
 // горизонтальный скролл
 function replaceVerticalScrollByHorizontal(event) {
     	if (event.deltaY != 0) {
@@ -52,13 +54,13 @@ function mousemove(e) {
 
  //создание grid ячеек 
 
-  var dridEx = document.getElementById("gridEx");
+  var dridEx = document.getElementById("flexEx");
 
 for (var i = 1; i < 22; i++) {
  var newDiv = document.createElement('div');
     newDiv.id=('div'+i);
-    newDiv.className=("gridCell");
-    gridEx.appendChild(newDiv);
+    newDiv.className=("flexCell");
+    flexEx.appendChild(newDiv);
 };
 
 for (var i = 1; i < 22; i++) {

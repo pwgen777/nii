@@ -14,23 +14,23 @@ body {
           
 }
 
-.container {
-    /* position: absolute; */
-}
 
-.grid {
+.flexContainer {  
     height: 100vh;
-    display: grid;
+    display: flex;
+    flex-wrap:  wrap;
     position: relative;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    
+    
 } 
 
-.gridCell {
+.flexCell {
+    width: calc(100%/7);
     margin: auto;
     text-align: center;
-    color: #FFFFFF  ;
+    color: white  ;
 }
+
 
 
 
