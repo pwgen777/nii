@@ -12,17 +12,25 @@ function replaceVerticalScrollByHorizontal(event) {
  
 
 // размеры области 
+
 var width , height;
 var getSize = document.getElementById('photo');
+var changeSize = document.getElementById("body"); 
+var chack = document.getElementById('contain');
+
 getSize.onload = function() {
     width = this.offsetWidth;
     height = this.offsetHeight; 
-    var changeSize = document.getElementById("body"); 
+   
         changeSize.style.width = (width+("px"));
         changeSize.style.height = (height+("px"));
-    var chack = document.getElementById('contain');
+
+   
         chack.style.width = (width+("px"));
         chack.style.height = (height+("px"));
+
+        
+
 }
 
 // скрол при зажатой ЛКМ
@@ -52,7 +60,7 @@ function mousemove(e) {
 
  }
 
- //создание grid ячеек 
+ //создание flexbox ячеек 
 
   var dridEx = document.getElementById("flexEx");
 
@@ -68,6 +76,33 @@ for (var i = 1; i < 22; i++) {
   txt.innerText = ('Персональный id = '+i);
  
  };
+
+// RESIZE WINDOW 
+
+ window.addEventListener('resize', function(event){
+
+  var offsetWidth = getSize.offsetWidth;
+  var offsetHeight = getSize.offsetHeight;
+
+  changeSize.style.width = (offsetWidth+("px"));
+  changeSize.style.height = (offsetHeight+("px"));
+
+  chack.style.width = (offsetWidth+("px"));
+  chack.style.height = (offsetHeight+("px"));
+  
+  
+   
+});
+
+
+
+
+ //наведение на flexbox
+
+//  var mouse = document.getElementById(div3);
+//  mouse.mouseover = function() {
+//    alert('dsd')
+//  }
  
 
 
